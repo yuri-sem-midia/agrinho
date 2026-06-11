@@ -1,17 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroForte</title>
-<link rel="stylesheet" href="style.css">
+    <title>Agro Forte - Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-<img class="cabeçalho-imagem" src="img/gato.webp" alt="imagem cabeçalho">
-<h1>AgroForte</h1>
 
+    <header>
+        <div class="container">
+            <h1>🌱 Agro Forte</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Equilíbrio entre Produção e Meio Ambiente</h2>
+            <p>
+                Produzir mais, preservar melhor e garantir um futuro sustentável
+                para as próximas gerações.
+            </p>
+            <button id="learnMoreBtn">Saiba Mais</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre o Agro Forte</h2>
+            <p>
+                O Agro Forte promove práticas agrícolas sustentáveis que unem
+                inovação, produtividade e preservação ambiental. O objetivo é
+                garantir alimentos de qualidade enquanto protege os recursos
+                naturais.
+            </p>
+        </div>
+    </section>
+
+    <section id="sustentabilidade" class="section">
+        <div class="container">
+            <h2>Sustentabilidade no Campo</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>💧 Uso Consciente da Água</h3>
+                    <p>
+                        Sistemas modernos de irrigação reduzem desperdícios e
+                        preservam os recursos hídricos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>☀️ Energia Renovável</h3>
+                    <p>
+                        O uso de energia solar e biomassa contribui para uma
+                        produção mais limpa e eficiente.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🌾 Conservação do Solo</h3>
+                    <p>
+                        Técnicas como rotação de culturas e plantio direto
+                        mantêm a fertilidade e evitam erosão.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+
+            <form id="contactForm">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agro Forte - Sustentabilidade e Produção Responsável</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
